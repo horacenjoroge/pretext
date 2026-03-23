@@ -11,7 +11,7 @@ const maxColWidth = 400
 
 // --- prepare all texts upfront ---
 const thoughts: string[] = []
-for (let i = 0; i < 2000; i++) {
+for (let i = 0; i < 10000; i++) {
   thoughts.push(rawThoughts[i % rawThoughts.length]!)
 }
 const prepared = thoughts.map(text => prepare(text, font))
